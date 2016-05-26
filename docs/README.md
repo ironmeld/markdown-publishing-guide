@@ -1,4 +1,4 @@
-# markdown-publishing-guide v1.0.0-prerelease
+# markdown-publishing-guide v1.0.0
 
 Documents
 --------
