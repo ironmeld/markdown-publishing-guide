@@ -211,11 +211,11 @@ project = u'project-name'
 * Click Versions tab
 * Click on version number to view
 
-### Prepare to develop next version
-* Update version at top of docs/index.md to indicate next anticipated version + "-prerelease".
-* Update version at top of README.md to indicate next anticipated version + "-prerelease".
-
 ## Develop the Next Version
+
+### Update version on master to indicate version in development
+* Update version at top of docs/*.md to indicate next anticipated version + "-prerelease".
+* Update version at top of README.md to indicate next anticipated version + "-prerelease".
 
 ### Improve the content
 * Improve the documents in docs/ on the 'master' branch.
