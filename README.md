@@ -8,9 +8,6 @@ produce a well-formatted set of documents with a detailed table of contents.
 
 This document itself was created using the instructions in this document.
 
-## Status
-This documentation is currently being written and should not be considered ready to use.
-
 ## Read the document here:
   * Click [here](http://markdown-publishing-guide.readthedocs.io/) for the latest formatted release of the document at readthedocs.io.
   * Click [here](docs/README.md) for the local version of the document in Markdown format.

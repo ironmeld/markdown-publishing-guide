@@ -8,9 +8,6 @@ produce a well-formatted set of documents with a detailed table of contents.
 
 This document itself was created using the instructions in this document.
 
-## Status
-This documentation is currently being written and should not be considered ready to use.
-
 ## Motivation
 This document was created to help others write documents in Markdown and have them look good on both GitHub and ReadTheDocs.
 By "good" I mean that on ReadTheDocs it has a table of contents page and there is a left navigation pane with topics
