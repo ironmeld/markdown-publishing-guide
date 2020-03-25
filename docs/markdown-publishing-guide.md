@@ -21,14 +21,59 @@ you can do what you want with this content and you don't have to add any attribu
 or do anything really - just copy it.
 
 ## Scope
-These instructions are intended for standalone documents, like this one, that do not require
-a sophisticated git branching and collaboration workflow.
-However, you can also ignore my suggested git workflow and subsitute your own in order to support collaboration.
+These instructions are intended for new, standalone documents like this one, that do not require
+a sophisticated git branching and collaboration workflow. 
+This workflow does not use pull requests. Editing is done on the master branch. 
+In order to handle developing a new version over multiple edits, the master branch is marked
+as a "prerelease" until the release is ready, at which point the "prerelease" status is removed.
+When a release is created, this workflow creates a tag for the new release and merges the 
+release tag to a branch named "latest-release" for convenience.
+The default ReadTheDocs version will point to the master branch so that when you click 
+the edit button in ReadTheDocs, it takes you to the appropriate branch for editing.
+Of course, you can also ignore my suggested git workflow and substitute your own in 
+order to support collaboration.
+
+
+## Existing Documents and Troubleshooting
+
+If you have an existing document and would like to add a table
+of contents, for example, these instructions are not sufficient for that situation. Existing documents are unlikely
+to have the same document structure (such as a using a docs subdirectory) and often have other settings and
+extensions which these instructions do not anticipate. This project not have enough resources to identify all
+(or really any of) the issues that can be present in existing documents that may produces unexpected results.
+
+If you try to adapt these instructions and the document structure it describes to your current document 
+and you run into problems,
+you might want to consider creating a separate project just for troubleshooting. You would use this new project
+in order to figure out what the problem is and then you can delete it later. The name could be the same as
+your original project, with "-test" added to the end, for example. You would also create a corresponding 
+copy of the project over on ReadTheDocs for troubleshooting.
+                 
+The troubleshooting strategy I will suggest is to start stripping away the differences between your new copy of 
+your project and my simple example until the specific difference causing the problem is identified. Just start 
+guessing as to what it could be.
+* If you have an existing conf.py, try removing the extra configuration lines in chunks until it (the RTD index) 
+  works or your file is just like mine. You may also need to adapt or remove some of your content if you 
+  are relying on that configuration.
+* Try removing files in your index.rst until it works or your index is pretty much like mine.
+* Try moving files into the docs subdirectory so it is more like my setup.
+* Try removing unusual content from your markdown docs.
+* Try changing the content to be more like mine.
+                 
+At this point you are just trying to figure out what difference, if removed, causes the index to show up correctly. 
+This process basically has to work because you either find the problem or you eventually end up with two projects 
+that are essentially identical although one works (mine) and one doesn't (yours). In my experience, that's so rare 
+that it is not worth worrying about until it happens.
+                 
+Once the difference that is causing the problem is identified, it is likely that there will be a straightforward
+solution that can be applied back to your original project.
 
 ## Preparing for Development
-* Create GitHub Account
-* Create ReadTheDocs Account
-* Setup Connection to GitHub in ReadTheDocs
+Follow the instructions from each provider in order to perform the following tasks.
+
+* Create a GitHub Account.
+* Create a ReadTheDocs Account.
+* Setup a Connection to GitHub in your ReadTheDocs account.
 
 ## Setting up a New Project
 
