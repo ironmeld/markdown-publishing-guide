@@ -264,7 +264,7 @@ myst_parser
 ## Develop the Next Version
 
 ### Update version on master to indicate version in development
-* Update version at top of docs/*.md to indicate next anticipated version + "-prerelease".
+* Update version at top of docs/\*.md to indicate next anticipated version + "-prerelease".
 * Update version at top of README.md to indicate next anticipated version + "-prerelease".
 
 ### Improve the content
@@ -276,7 +276,7 @@ myst_parser
 Set version number (vX.Y.Z) decided upon for the new release in file headers.
 
 * Update top of README.md
-* Update docs/*.md
+* Update docs/\*.md
 
 ### Edit CHANGELOG.md to include vX.Y.Z description
 * Go to the repository main page.
@@ -295,9 +295,11 @@ Set version number (vX.Y.Z) decided upon for the new release in file headers.
 
 ### Create GitHub release
 * Go to the repository main page.
-* Click on "N releases" (where N is the current number of releases)
-* Click "Create a new release"
+* Click on "Releases" on the right hand side
+* Click "Draft a new release"
+* Click "Choose a tag"
 * Type "vX.Y.Z" in the text box (replacing X, Y, and Z with the major, minor, and patch number.)
+* Click "Create new tag: ..." right below the text you just typed.
 * Enter "vX.Y.Z Put Theme or CodeWord Here" in the title box (replacing with appropriate theme or code word)
 * Enter the contents of the CHANGELOG.md entry in the description box
 * If major version is zero, click "This is a pre-release"
