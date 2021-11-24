@@ -1,3 +1,6 @@
+# v1.0.3
+* Updated github release instructions
+
 # v1.0.2
 * Removed angle brackets from markdown content
 * Updated markdown configuration to the latest required by ReadTheDocs
