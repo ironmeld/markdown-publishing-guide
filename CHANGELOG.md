@@ -1,3 +1,7 @@
+# v1.0.2
+* Removed angle brackets from markdown content
+* Updated markdown configuration to the latest required by ReadTheDocs
+
 # v1.0.1
 * Clarify scope
 * Improve explanation of git workflow
