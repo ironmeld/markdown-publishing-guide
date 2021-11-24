@@ -1,4 +1,4 @@
-# Markdown Publishing Guide v1.0.2-prerelease
+# Markdown Publishing Guide v1.0.3-prerelease
 A guide to publishing Markdown documents on GitHub and ReadTheDocs
 
 ## Introduction
