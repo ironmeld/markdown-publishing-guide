@@ -287,7 +287,7 @@ Set version number (vX.Y.Z) decided upon for the new release in file headers.
 
 ### Create GitHub release
 * Go to the repository main page.
-* Click on "<N> releases" (where <N> is the current number)
+* Click on "N releases" (where N is the current number of releases)
 * Click "Create a new release"
 * Type "vX.Y.Z" in the text box (replacing X, Y, and Z with the major, minor, and patch number.)
 * Enter "vX.Y.Z Put Theme or CodeWord Here" in the title box (replacing with appropriate theme or code word)
@@ -296,10 +296,10 @@ Set version number (vX.Y.Z) decided upon for the new release in file headers.
 * Click "Publish release"
 
 ### Merge release tag to 'latest-release' branch.
-Change user-name, project-name in commands below.
+Change user-name, project-name, and release-tag in commands below. The format vX.Y.Z should be used for release-tag.
 ```
 $ git clone -b latest-release ssh://github.com/user-name/project-name
 $ cd project-name
-$ git merge --ff-only <release-tag>
+$ git merge --ff-only release-tag
 $ git push
 ```
