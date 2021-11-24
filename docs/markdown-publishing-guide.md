@@ -175,11 +175,7 @@ Documents
 * Click in the file content area and add the content below.
 * Be sure to change 'project-name' in content below to actual project name.
 ```
-from recommonmark.parser import CommonMarkParser
-
-source_parsers = {
-    '.md': CommonMarkParser,
-}
+extensions = ['myst_parser']
 
 source_suffix = ['.rst', '.md']
 
@@ -188,6 +184,18 @@ project = u'project-name'
 ```
 * Edit commit message
     * "Add sphinx conf file for ReadTheDocs support"
+* Click "Commit new file"
+ 
+#### Create docs/requirements.txt
+* Go to the repository main page
+* Click on "New file".
+* Type "docs/requirements.txt" in the file name text box.
+* Click in the file content area and add the content below.
+```
+myst_parser
+```
+* Edit commit message
+    * "Add sphinx requirements file for ReadTheDocs support"
 * Click "Commit new file"
 
 ### Setup ReadTheDocs project
